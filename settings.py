@@ -26,5 +26,8 @@ SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
 STATIC_PATHS = ["images", ]
 
 # A list of files to copy from the source to the destination
-FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),
+                 ('extra/.htaccess', '.htaccess'),      # Disable PHP
+                 ('extra/index.php', 'index.php')       # Trick Heroku
+                 )
 
