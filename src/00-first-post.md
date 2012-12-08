@@ -1,4 +1,4 @@
-Date: 2012-12-10
+Date: 2012-12-06
 Title: Hello World
 Category: general
 Tags: python, pelican, blogging
