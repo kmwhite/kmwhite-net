@@ -4,6 +4,8 @@ SITEURL = u'http://www.kmwhite.net'
 TIMEZONE = "America/Chicago"
 THEME = 'kmwhite'
 
+DISQUS_SITENAME = 'kmwhite.net'
+
 GITHUB_URL = 'http://github.com/kmwhite/'
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
