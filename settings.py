@@ -2,7 +2,7 @@ AUTHOR = u'Kristofer M White'
 SITENAME = u'kmwhite.net'
 SITEURL = u'http://www.kmwhite.net'
 TIMEZONE = "America/Chicago"
-THEME = 'tuxlite_tbs'
+THEME = 'kmwhite'
 
 GITHUB_URL = 'http://github.com/kmwhite/'
 PDF_GENERATOR = False
