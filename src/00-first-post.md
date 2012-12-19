@@ -3,8 +3,6 @@ Title: Hello World
 Category: general
 Tags: python, pelican, blogging
 
-## Hello World, from Pelican
-
 I just switched over to [Pelican](https://github.com/getpelican/pelican/) to host my website. Two years behind the curve? Sure. That sounds like me. I did it because I wanted simple. There are tons of guides out there:
 
  * [Pelican: a static blog generator for Pythonistas](http://fjavieralba.com/pelican-a-static-blog-generator-for-pythonistas.html)
