@@ -4,7 +4,7 @@ SITEURL = u'http://www.kmwhite.net'
 TIMEZONE = "America/Chicago"
 THEME = 'kmwhite'
 
-DISQUS_SITENAME = 'kmwhite.net'
+DISQUS_SITENAME = 'kmwhite'
 
 GITHUB_URL = 'http://github.com/kmwhite/'
 PDF_GENERATOR = False
