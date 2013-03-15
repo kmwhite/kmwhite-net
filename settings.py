@@ -7,6 +7,7 @@ THEME = 'kmwhite'
 DISQUS_SITENAME = 'kmwhite'
 
 GITHUB_URL = 'http://github.com/kmwhite/'
+TWITTER_USERNAME = '_kmwhite'
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
 LOCALE = "C"
