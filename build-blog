@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pelican -s settings.py src/
