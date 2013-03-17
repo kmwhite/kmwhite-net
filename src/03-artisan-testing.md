@@ -3,18 +3,18 @@ Title: A PyCon Special Post - Artisan Testing
 Category: testing
 Tags: testing, python, tdd
 
-Being at PyCon, I was inspired to do something. At work, I am typically writing CFEngine3 policy and not writing a lot of code. I should be filling my free time with more projects. Being around all the other great Python developers and getting to talk to them about their work (I cannot rave about [BreakfastSerial](https://github.com/theycallmeswift/BreakfastSerial) enough), I was inspired to pick up where I left off with a project of mine. That project was 'artisan'. A library for generating complete instances for testing, rather than stubbing.
+Being at PyCon, I was inspired to do something. At work, I am typically writing CFEngine3 policy and not writing a lot of code. I should be filling my free time with more projects. Being around all the other great Python developers and getting to talk to them about their work (I cannot rave about [BreakfastSerial](https://github.com/theycallmeswift/BreakfastSerial) enough), I was inspired to pick up where I left off with a project of mine. Part of it probably comes from [Kenneth Reitz](https://twitter.com/kennethreitz)'s talk, Python for Humans. He said that if something in python is confusing, you should work to make it more clear, more predictable, and easier to get started with. The project I left off on was 'artisan' - a library for generating complete instances for testing, rather than stubbing, mocking, or any of that other stuff.
 
-Why create a library when there are copious amounts of them already in PyPI? Well, I didn't want to use stubs. I don't like stubs. When testing, I like to use the logic already in existence for my instances.
+Why create a library when there are copious amounts of them already in PyPI? Well, I didn't want to use stubs mocks. I don't like stubs or mocks. When testing, I like to use the logic already in existence for my instances. Also, if you look at the work that it takes to do mocking, it seems like a waste of time, it isn't straight forward, nor is it clear. You're duplicating a lot of the energy you have already spent writing your models.
 
 ### Artisan Testing
 
 #### Installing Artisan
-Installing is nice and simple:
+Installing is nice and simple. It is available in PyPI.
 
-    pip install --user artisan
+    pip install artisan
 
-As an aside, I do not understand why there are individuals who DON'T use the '--user' flag for all their pip commands... Seriously. Why the system-wide installs, people?
+If you are not using a virtualenv, you probably will want to add the '--user' flag. However, you will also probably want to *start* using virtualenvs. Seriously, they're awesome.
 
 #### Using Artisan
 Let's assume there is a simple app you need to test with the Foo class. The Foo class looks a lot like:
@@ -67,7 +67,9 @@ In your tests, you then do:
     <class '__main__.Foo'>
 
 ### Miscellaneous
-I've been trying to keep artisan Python3 and Python2.X compatible. Also, Artisan in no way replaces your testing library, but helps to craft better data to test with. 
+I've been trying to keep artisan Python3 and Python2.X compatible. Also, Artisan in no way replaces your testing library, but helps to craft better data to test with. There are a number of improvements I'd like to integrate as well:
+* I want to make the use of blueprints an optional component. Given a class to create, it would be cool to do introspection and determine the attributes to generate information for.
+* I want abstract calls to python-faker behind a fabricate submodule to make it easier for developers to use, namely not having to write out lambdas. Although lambdas are a fantastic tool, and incredibly powerful, not everyone knows them and we're supposed to target the '90% Use Case'.
 
 ### Disclaimer
 Artisan is very much a Work In Progress. It will likely change. I am more than happy to accept Pull Requests, complaints, or general criticisms. Feel free to submit them on the GitHub repo.
