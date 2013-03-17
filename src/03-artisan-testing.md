@@ -7,6 +7,8 @@ Being at PyCon, I was inspired to do something. At work, I am typically writing 
 
 Why create a library when there are copious amounts of them already in PyPI? Well, I didn't want to use stubs mocks. I don't like stubs or mocks. When testing, I like to use the logic already in existence for my instances. Also, if you look at the work that it takes to do mocking, it seems like a waste of time, it isn't straight forward, nor is it clear. You're duplicating a lot of the energy you have already spent writing your models.
 
+Part of my views might be skewed by the fact that I have done a lot of ruby (I'm a recovering rubyist), but in ruby, testing is a core part of the culture. Testing is important. Ruby has the ability to write beautiful tests. Python is beautiful, so it should have the same ability.
+
 ### Artisan Testing
 
 #### Installing Artisan
