@@ -1,5 +1,5 @@
 date: 2013-03-14
-Title: A PyCon Special Post - Artisan Testing
+Title: A PyCon Inspired Post - Artisan Testing
 Category: testing
 Tags: testing, python, tdd
 
