@@ -68,8 +68,9 @@ In your tests, you then do:
 
 ### Miscellaneous
 I've been trying to keep artisan Python3 and Python2.X compatible. Also, Artisan in no way replaces your testing library, but helps to craft better data to test with. There are a number of improvements I'd like to integrate as well:
-* I want to make the use of blueprints an optional component. Given a class to create, it would be cool to do introspection and determine the attributes to generate information for.
-* I want abstract calls to python-faker behind a fabricate submodule to make it easier for developers to use, namely not having to write out lambdas. Although lambdas are a fantastic tool, and incredibly powerful, not everyone knows them and we're supposed to target the '90% Use Case'.
+
+ * I want to make the use of blueprints an optional component. Given a class to create, it would be cool to do introspection and determine the attributes to generate information for.
+ * I want abstract calls to python-faker behind a fabricate submodule to make it easier for developers to use, namely not having to write out lambdas. Although lambdas are a fantastic tool, and incredibly powerful, not everyone knows them and we're supposed to target the '90% Use Case'.
 
 ### Disclaimer
 Artisan is very much a Work In Progress. It will likely change. I am more than happy to accept Pull Requests, complaints, or general criticisms. Feel free to submit them on the GitHub repo.
