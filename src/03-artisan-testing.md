@@ -79,5 +79,6 @@ Artisan is very much a Work In Progress. It will likely change. I am more than h
 
 
 ### References
-* [Artisan Github Repo](http://github.com/kmwhite/artisan)
-* [Artisan on PyPI](https://pypi.python.org/pypi/artisan)
+ * [Artisan Github Repo](http://github.com/kmwhite/artisan)
+ * [Artisan on PyPI](https://pypi.python.org/pypi/artisan)
+ * [A review of Mocking](http://www.voidspace.org.uk/python/articles/mocking.shtml)
