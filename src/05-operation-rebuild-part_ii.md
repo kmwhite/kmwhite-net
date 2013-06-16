@@ -7,7 +7,7 @@ I was asking around [Jeepit](http://www.reddit.com/r/jeep) about my issues and r
 
 It started me off thinking.  I took her out for a few drives to gauge her behavior. The idle stumble is significantly better since I did the most recent sensor replacements. It happened maybe once in my 45min drive. To tackle that, I ordered a new O2 sensor. I'll install that, before trying the other solutions suggested by /u/nothinginit, given the test results output from Torque.
 
-As for the RPM spike, I added running on cruise control to the test drive -- it didn't spike while doing it. It only seems to spike when I'm actually attempting to accelerate. From a stopped position, when I push down on the gas, the car picks up and moves fine. About half the time, it has a quick spike in RPMs and then bucks forward and starts moving. When driving, and pushing down to increase my speed to pass another vehicle, the RPMs spike and it almost feels like I'm in neutral, but the car picks up speed after the short hesitation. The sudden spike causes a rough ride that wasn't there before I brought it in. :angry:
+As for the RPM spike, I added running on cruise control to the test drive -- it didn't spike while doing it. It only seems to spike when I'm actually attempting to accelerate. From a stopped position, when I push down on the gas, the car picks up and moves fine. About half the time, it has a quick spike in RPMs and then bucks forward and starts moving. When driving, and pushing down to increase my speed to pass another vehicle, the RPMs spike and it almost feels like I'm in neutral, but the car picks up speed after the short hesitation. The sudden spike causes a rough ride that wasn't there before I brought it in. ![angry](/static/images/angry.gif)
 
 The thing that confuses me the most about this is that I didn't have any of these problems until I had the crappy CKP in the car and got the misfires. Since I replaced the CKP, it has gotten a lot better, but still isn't *right*. Should I be looking for a Mopar one to finish improving it?
 
@@ -21,4 +21,4 @@ On a side note, I have two notes about this endeavour:
 
 * I enjoy that two months ago, I didn't know how **ANYTHING** in the car worked. If nothing else, this is a great learning experience.
 
-* Parking in a closed garage, with a recently driven engine, in 92&deg;F heat and humidity, is **HOT**. :hot: Don't do it again...
+* Parking in a closed garage, with a recently driven engine, in 92&deg;F heat and humidity, is **HOT**. ![dead](/static/images/dead.gif) Don't do it again...
