@@ -22,3 +22,7 @@ On a side note, I have two notes about this endeavour:
 * I enjoy that two months ago, I didn't know how **ANYTHING** in the car worked. If nothing else, this is a great learning experience.
 
 * Parking in a closed garage, with a recently driven engine, in 92&deg;F heat and humidity, is **HOT**. ![dead](/static/images/dead.gif) Don't do it again...
+
+
+**UPDATE (2013-06-16)**
+After letting the engine cool over night, I went and changed the plugs. It improved the ride by about 30%. It turns out that they incorrectly gapped the three plugs that were misfiring (the plugs were at 0.030"). Smoother, but still needs some love. Hopefully the O<sub>2</sub> and Camshaft Positioning sensors will fix the last of it. 
