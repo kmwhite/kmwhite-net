@@ -5,7 +5,7 @@ Tags: jeep, veronica
 
 I was asking around [Jeepit](http://www.reddit.com/r/jeep) about my issues and received a great response from [nothinginit](http://www.reddit.com/r/Jeep/comments/1g3caj/idle_problems_acceleration_problems_need_advice/caiblhi).
 
-It started me off thinking.  I took her out for a few drives to gauge her behavior. The idle stumble is significantly better since I did the most recent sensor replacements. It happened maybe once in my 45min drive. To tackle that, I ordered a new O2 sensor. I'll install that, before trying the other solutions suggested by /u/nothinginit, given the test results output from Torque.
+It started me off thinking.  I took her out for a few drives to gauge her behavior. The idle stumble is significantly better since I did the most recent sensor replacements. It happened maybe once in my 45min drive. To tackle that, I ordered a new O<sub>2</sub> sensor. I'll install that, before trying the other solutions suggested by /u/nothinginit, given the test results output from Torque.
 
 As for the RPM spike, I added running on cruise control to the test drive -- it didn't spike while doing it. It only seems to spike when I'm actually attempting to accelerate. From a stopped position, when I push down on the gas, the car picks up and moves fine. About half the time, it has a quick spike in RPMs and then bucks forward and starts moving. When driving, and pushing down to increase my speed to pass another vehicle, the RPMs spike and it almost feels like I'm in neutral, but the car picks up speed after the short hesitation. The sudden spike causes a rough ride that wasn't there before I brought it in. ![angry](/static/images/angry.gif)
 
