@@ -29,9 +29,16 @@ SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
 STATIC_PATHS = ["images", ]
 
 # A list of files to copy from the source to the destination
-FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),
-                 ('extra/.htaccess', '.htaccess'),      # Disable PHP
-                 ('extra/index.php', 'index.php'),      # Trick Heroku
-                 ('extra/favicon.ico', 'favicon.ico'),
-                 )
+STATIC_PATHS = [
+    'extra/robots.txt',
+    'extra/.htaccess',
+    'extra/index.php',
+    'extra/favicon.ico',
+]
 
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt':  {'path': 'robots.txt'},
+    'extra/.htaccess':   {'path': '.htaccess'},     # Disable PHP
+    'extra/index.php':   {'path': 'index.php'},     # Trick Heroku
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
