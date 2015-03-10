@@ -37,8 +37,9 @@ STATIC_PATHS = [
 ]
 
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt':  {'path': 'robots.txt'},
-    'extra/.htaccess':   {'path': '.htaccess'},     # Disable PHP
-    'extra/index.php':   {'path': 'index.php'},     # Trick Heroku
-    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/composer.json': {'path': 'composer.json'},
+    'extra/robots.txt':    {'path': 'robots.txt'},
+    'extra/.htaccess':     {'path': '.htaccess'},     # Disable PHP
+    'extra/index.php':     {'path': 'index.php'},     # Trick Heroku
+    'extra/favicon.ico':   {'path': 'favicon.ico'},
 }
