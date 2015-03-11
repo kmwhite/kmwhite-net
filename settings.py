@@ -1,7 +1,7 @@
 AUTHOR = u'Kristofer M White'
 SITENAME = u'kmwhite.net'
 SITEURL = u'http://www.kmwhite.net'
-TIMEZONE = "America/Chicago"
+TIMEZONE = 'America/Chicago'
 THEME = 'kmwhite'
 
 DISQUS_SITENAME = 'kmwhite'
@@ -10,13 +10,13 @@ GITHUB_URL = 'http://github.com/kmwhite/'
 TWITTER_USERNAME = '_kmwhite'
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
-LOCALE = "C"
+LOCALE = 'C'
 DEFAULT_PAGINATION = 4
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-LINKS = (('Techno-Geeks', "http://www.techno-geeks.org/"),)
+LINKS = (('Techno-Geeks', 'http://www.techno-geeks.org/'),)
 
 SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
           ('github', 'http://github.com/kmwhite'),
@@ -27,7 +27,7 @@ SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
 
 # Static paths will be copied under the same name
 STATIC_PATHS = [
-    "images",
+    'images',
     'extra/.htaccess',
     'extra/composer.json',
     'extra/favicon.ico',
