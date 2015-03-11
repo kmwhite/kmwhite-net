@@ -23,25 +23,25 @@
 .navbar .divider-vertical { border-right: 1px solid #4D4D4D; }
 .navbar { margin-bottom: 4em; }
 .navbar-search {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 label,input,button,select,textarea {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 
 /* Styling for elements */
 body {
   font-size: 100%;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   background-image: url("/theme/images/background.png");
   background-repeat: repeat;
   background-size: auto auto;
 }
 p {
   font-size: 100%;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
@@ -54,10 +54,10 @@ h3 { margin-top: 2.5em; }
 .article { padding-bottom:20px; padding-right: 40px; }
 .content-title { margin-bottom: 30px; }
 .article-title {
-  font-family: 'Headland One', serif;
+  font-family: 'Droid Serif', serif;
 }
 .article-content {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 .article-content p {
   font-family: inherit !important;
@@ -70,7 +70,7 @@ h3 { margin-top: 2.5em; }
 /* Metadata */
 .well.small {
   padding: 6px 6px 4px;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 /* Read more button */
