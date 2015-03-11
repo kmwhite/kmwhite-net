@@ -25,21 +25,22 @@ SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
 # global metadata to all the contents
 # DEFAULT_METADATA = (('yeah', 'it is'),)
 
-# static paths will be copied under the same name
-STATIC_PATHS = ["images", ]
-
-# A list of files to copy from the source to the destination
+# Static paths will be copied under the same name
 STATIC_PATHS = [
-    'extra/robots.txt',
+    "images",
     'extra/.htaccess',
-    'extra/index.php',
+    'extra/composer.json',
     'extra/favicon.ico',
+#    'extra/index.php',
+    'extra/robots.txt',
 ]
 
+# A lit of extra attrs to respect when traversing STATIC_PATHS,
+# including altering destination paths
 EXTRA_PATH_METADATA = {
-    'extra/composer.json': {'path': 'composer.json'},
-    'extra/robots.txt':    {'path': 'robots.txt'},
     'extra/.htaccess':     {'path': '.htaccess'},     # Disable PHP
-    'extra/index.php':     {'path': 'index.php'},     # Trick Heroku
+    'extra/composer.json': {'path': 'composer.json'},
     'extra/favicon.ico':   {'path': 'favicon.ico'},
+#    'extra/index.php':     {'path': 'index.php'},     # Trick Heroku
+    'extra/robots.txt':    {'path': 'robots.txt'},
 }
