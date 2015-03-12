@@ -1,6 +1,9 @@
 /*Syntax highlighting for pygments*/
 /* --> Sunburst theme */
-div.codehilite > pre { background-color: #2f2f2f;}
+div.codehilite > pre {
+  background-color: #2f2f2f;
+  color: #fbfbfb;
+}
 .hll { background-color: #ffffcc }
 .c { color: #aeaeae; font-style: italic; } /* Comment */
 .err { color: #f8f8f8; } /* Error */
