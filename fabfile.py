@@ -6,7 +6,7 @@ import SimpleHTTPServer
 import SocketServer
 
 # Port for `serve`
-PORT = 8000
+PORT = 5000
 
 def build():
     """Build local version of site"""
@@ -18,7 +18,7 @@ def build():
 
 def regenerate():
     """Automatically regenerate site upon file modification"""
-    fabric.api.local('pelican -r -s pelicanconf.py')
+    local('pelican -r -s settings.py src/')
 
 def serve():
     """Serve site at http://localhost:8000/"""
