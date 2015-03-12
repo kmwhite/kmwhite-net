@@ -13,6 +13,13 @@ REVERSE_CATEGORY_ORDER = True
 LOCALE = 'C'
 DEFAULT_PAGINATION = 4
 
+# List found at:
+# http://pythonhosted.org/Markdown/extensions/
+MD_EXTENSIONS = [
+    'markdown.extensions.codehilite',
+    'markdown.extensions.fenced_code',
+]
+
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
