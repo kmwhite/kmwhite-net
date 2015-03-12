@@ -1,4 +1,5 @@
 from fabric.api import local
+import datetime
 import os
 import shutil
 import sys
@@ -37,3 +38,8 @@ def publish():
     build()
     os.chdir('output')
     local('git commit -a && git push')
+
+def new(title):
+    """Create a new post"""
+    date = datetime.date.today().strftime('%Y%m%d')
+    local('vim src/{0}_{1}'.format(date, title))
