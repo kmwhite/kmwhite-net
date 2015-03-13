@@ -33,11 +33,14 @@ def serve():
     sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
     server.serve_forever()
 
-def publish():
+def publish(msg = None):
     """Publish to Heroku"""
     build()
     os.chdir('output')
-    local('git commit -a && git push')
+    if msg is None:
+        local('git commit -a && git push')
+    else:
+        local("git commit -am '{0}' && git push".format(msg))
 
 def new(title):
     """Create a new post"""
