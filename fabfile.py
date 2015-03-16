@@ -42,7 +42,10 @@ def publish(msg = None):
     else:
         local("git commit -am '{0}' && git push".format(msg))
 
-def new(title):
+def new(title = None):
     """Create a new post"""
     date = datetime.date.today().strftime('%Y%m%d')
-    local('vim src/{0}_{1}'.format(date, title))
+    if title is None:
+        title = raw_input("Title for new post? ").lower().replace(' ', '-')
+
+    local('vim src/{0}_{1}.md'.format(date, title))
