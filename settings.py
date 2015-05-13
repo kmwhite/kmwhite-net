@@ -18,6 +18,7 @@ DEFAULT_PAGINATION = 4
 MD_EXTENSIONS = [
     'markdown.extensions.codehilite',
     'markdown.extensions.fenced_code',
+    'markdown.extensions.footnotes',
 ]
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'
