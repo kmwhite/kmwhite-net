@@ -16,9 +16,13 @@ DEFAULT_PAGINATION = 4
 # List found at:
 # http://pythonhosted.org/Markdown/extensions/
 MD_EXTENSIONS = [
+    'markdown.extensions.abbr',
+    'markdown.extensions.admonition',
     'markdown.extensions.codehilite',
+    'markdown.extensions.def_list',
     'markdown.extensions.fenced_code',
     'markdown.extensions.footnotes',
+    'markdown.extensions.toc',
 ]
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'
