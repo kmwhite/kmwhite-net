@@ -1,5 +1,6 @@
 cache/*
 output/*
 settings.pyc
+drafts/*
 **/*.pyc
 
