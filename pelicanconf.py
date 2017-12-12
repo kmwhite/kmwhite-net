@@ -1,17 +1,42 @@
-AUTHOR = u'Kristofer M White'
-SITENAME = u'kmwhite.net'
-SITEURL = u'http://www.kmwhite.net'
-TIMEZONE = 'America/Chicago'
-THEME = 'kmwhite'
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
 
+AUTHOR = 'Kristofer M White'
+SITENAME = 'kmwhtie.net - Random Bathering of a Self-Taught Programmer'
+SITEURL = ''
+
+PATH = 'content'
+
+TIMEZONE = 'America/Chicago'
+
+DEFAULT_LANG = 'en'
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
+TWITTER_USERNAME = '_kmwhite'
 DISQUS_SITENAME = 'kmwhite'
 
-GITHUB_URL = 'http://github.com/kmwhite/'
-TWITTER_USERNAME = '_kmwhite'
-PDF_GENERATOR = False
-REVERSE_CATEGORY_ORDER = True
-LOCALE = 'C'
-DEFAULT_PAGINATION = 4
+# Blogroll
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('Techno-Geeks', 'http://www.techno-geeks.org/'))
+
+# Social widget
+SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
+          ('github', 'http://github.com/kmwhite'),
+          ('bitbucket', 'http://bitbucket.org/kmwhite'))
+
+DEFAULT_PAGINATION = 10
+
+# Document-relative URLs
+RELATIVE_URLS = True
 
 # List found at:
 # http://pythonhosted.org/Markdown/extensions/
@@ -24,18 +49,6 @@ MD_EXTENSIONS = [
     'markdown.extensions.footnotes',
     'markdown.extensions.toc',
 ]
-
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
-
-LINKS = (('Techno-Geeks', 'http://www.techno-geeks.org/'),)
-
-SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
-          ('github', 'http://github.com/kmwhite'),
-          ('bitbucket', 'http://bitbucket.org/kmwhite'))
-
-# global metadata to all the contents
-# DEFAULT_METADATA = (('yeah', 'it is'),)
 
 # Static paths will be copied under the same name
 STATIC_PATHS = [

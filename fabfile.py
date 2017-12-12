@@ -1,30 +1,43 @@
-from fabric.api import local
-import datetime
+from fabric.api import *
+import fabric.contrib.project as project
 import os
-import shutil
 import sys
 import SimpleHTTPServer
 import SocketServer
 
-# Port for `serve`
-PORT = 5000
+# Local path configuration (can be absolute or relative to fabfile)
+env.deploy_path = 'output'
+DEPLOY_PATH = env.deploy_path
+
+# Remote server configuration
+production = 'root@localhost:22'
+dest_path = '/var/www'
+
+# Rackspace Cloud Files configuration settings
+env.cloudfiles_username = 'my_rackspace_username'
+env.cloudfiles_api_key = 'my_rackspace_api_key'
+env.cloudfiles_container = 'my_cloudfiles_container'
+
+
+def clean():
+    if os.path.isdir(DEPLOY_PATH):
+        local('rm -rf {deploy_path}'.format(**env))
+        local('mkdir {deploy_path}'.format(**env))
 
 def build():
-    """Build local version of site"""
-    # Generate the static content
-    # -v for verbose mode
-    # -D for debug output
-    # -s for specifying a custom settings file
-    local('pelican -s settings.py src/')
+    local('pelican -s pelicanconf.py')
+
+def rebuild():
+    clean()
+    build()
 
 def regenerate():
-    """Automatically regenerate site upon file modification"""
-    local('pelican -r -s settings.py src/')
+    local('pelican -r -s pelicanconf.py')
 
 def serve():
-    """Serve site at http://localhost:8000/"""
-    os.chdir('output')
+    os.chdir(env.deploy_path)
 
+    PORT = 8000
     class AddressReuseTCPServer(SocketServer.TCPServer):
         allow_reuse_address = True
 
@@ -33,19 +46,28 @@ def serve():
     sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
     server.serve_forever()
 
-def publish(msg = None):
-    """Publish to Heroku"""
+def reserve():
     build()
-    os.chdir('output')
-    if msg is None:
-        local('git commit -a && git push')
-    else:
-        local("git commit -am '{0}' && git push".format(msg))
+    serve()
 
-def new(title = None):
-    """Create a new post"""
-    date = datetime.date.today().strftime('%Y%m%d')
-    if title is None:
-        title = raw_input("Title for new post? ").lower().replace(' ', '-')
+def preview():
+    local('pelican -s publishconf.py')
 
-    local('vim src/{0}_{1}.md'.format(date, title))
+def cf_upload():
+    rebuild()
+    local('cd {deploy_path} && '
+          'swift -v -A https://auth.api.rackspacecloud.com/v1.0 '
+          '-U {cloudfiles_username} '
+          '-K {cloudfiles_api_key} '
+          'upload -c {cloudfiles_container} .'.format(**env))
+
+@hosts(production)
+def publish():
+    local('pelican -s publishconf.py')
+    project.rsync_project(
+        remote_dir=dest_path,
+        exclude=".DS_Store",
+        local_dir=DEPLOY_PATH.rstrip('/') + '/',
+        delete=True,
+        extra_opts='-c',
+    )
