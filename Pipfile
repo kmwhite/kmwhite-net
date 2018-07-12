@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pelican = "==3.5.0"
+Markdown = "==2.6.1"
+Fabric = "==1.10.1"
+invoke = "*"
+
+[dev-packages]
+pylint = "*"
+invoke = "*"
+
+[requires]
+python_version = "3.6"

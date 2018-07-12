@@ -3,13 +3,16 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Kristofer M White'
-SITENAME = 'kmwhtie.net - Random Bathering of a Self-Taught Programmer'
+SITENAME = 'kmwhite.net'
+WELCOME_MESSAGE = 'random blathering from a software janitor'
 SITEURL = ''
+LOGOPATH = '/theme/images/avatar.jpg'
+THEME = 'semantic-ui'
+THEME_VARIANT = 'darkly'
 
 PATH = 'content'
 
 TIMEZONE = 'America/Chicago'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -19,36 +22,33 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+INCLUDE_SOCIAL_SHARE_LINKS = False
+INCLUDE_FOOTER = True
+INCLUDE_FOOTER_VERTICAL = False
+INCLUDE_FOOTER_HORIZONTAL = True
+
 TWITTER_USERNAME = '_kmwhite'
-DISQUS_SITENAME = 'kmwhite'
+# DISQUS_SITENAME = 'kmwhite'
+GITHUB_USERNAME = 'kmwhite'
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('Techno-Geeks', 'http://www.techno-geeks.org/'))
+MENU_LINKS = (
+    ('twitter', 'http://twitter.com/_kmwhite'),
+    ('github', 'http://github.com/kmwhite'),
+    ('bitbucket', 'http://bitbucket.org/kmwhite')
+)
+LINKS = (
+    ('Pelican', 'http://getpelican.com/'),
+    ('Python.org', 'http://python.org/'),
+    ('Jinja2', 'http://jinja.pocoo.org/'),
+    ('Techno-Geeks', 'http://www.techno-geeks.org/')
+)
 
-# Social widget
-SOCIAL = (('twitter', 'http://twitter.com/_kmwhite'),
-          ('github', 'http://github.com/kmwhite'),
-          ('bitbucket', 'http://bitbucket.org/kmwhite'))
 
 DEFAULT_PAGINATION = 10
 
 # Document-relative URLs
 RELATIVE_URLS = True
-
-# List found at:
-# http://pythonhosted.org/Markdown/extensions/
-MD_EXTENSIONS = [
-    'markdown.extensions.abbr',
-    'markdown.extensions.admonition',
-    'markdown.extensions.codehilite',
-    'markdown.extensions.def_list',
-    'markdown.extensions.fenced_code',
-    'markdown.extensions.footnotes',
-    'markdown.extensions.toc',
-]
 
 # Static paths will be copied under the same name
 STATIC_PATHS = [
@@ -59,8 +59,8 @@ STATIC_PATHS = [
     'extra/robots.txt',
 ]
 
-# A lit of extra attrs to respect when traversing STATIC_PATHS,
-# including altering destination paths
+# A list of extra attrs to respect when traversing
+# STATIC_PATHS, including altering destination paths
 EXTRA_PATH_METADATA = {
     'extra/.htaccess':     {'path': '.htaccess'},
     'extra/composer.json': {'path': 'composer.json'},
