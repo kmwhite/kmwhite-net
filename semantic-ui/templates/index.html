@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block extra_scripts %}
+<script>
+    $('#sidebar')
+        .sidebar('setting', 'transition', 'push')
+        .sidebar('attach events', '#sidebar-trigger')
+    ;
+</script>
+{% endblock %}

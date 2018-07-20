@@ -1,0 +1,12 @@
+<div class="ui pointing menu">
+    <a class="item" id="sidebar-trigger">
+        {% if LOGOPATH %}
+        <img class="logo" src="{{ SITEURL }}{{ LOGOPATH }}">
+        {% else %}
+        <img class="logo" src="{{ SITEURL }}/theme/images/logo.png">
+        {% endif %}
+    </a>
+    <a class="item">
+        {{ SITENAME }}
+    </a>
+</div>
