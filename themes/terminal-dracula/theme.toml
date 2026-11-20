@@ -1,0 +1,6 @@
+name = "Terminal Dracula"
+license = "MIT"
+description = "Theme component for Terminal: Black & White page colors with Dracula syntax highlighting."
+tags = ["dark", "monotone", "highlighting", "dracula"]
+features = ["syntax highlighting"]
+min_version = 0.90

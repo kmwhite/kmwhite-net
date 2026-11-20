@@ -1,0 +1,22 @@
+baseURL = "https://kmwhite.net/"
+languageCode = "en-us"
+title = "Ramblings of a Mad Developer"
+theme = ["terminal-dracula", "terminal"]
+
+[pagination]
+  pagerSize = 5
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  centerTheme = false
+  autoCover = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"

@@ -1,0 +1,14 @@
+{
+  "name": "kmwhite-net",
+  "private": true,
+  "scripts": {
+    "build": "hugo --minify",
+    "postinstall": "[ -z \"$GANDI\" ] || npm run build",
+    "start": "node server.js",
+    "dev": "hugo server --buildDrafts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "hugo-extended": "0.164.0"
+  }
+}

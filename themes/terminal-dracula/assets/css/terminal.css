@@ -1,0 +1,11 @@
+/*
+ * terminal-dracula — page colors
+ * "Black & White" preset from https://panr.github.io/terminal-css/
+ * Hugo loads this before Terminal's main.css, so the doubled
+ * :root:root selector is used to outrank main.css's :root defaults.
+ */
+:root:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #ffffff;
+}

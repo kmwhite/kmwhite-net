@@ -1,0 +1,6 @@
+# Defaults merged into the site config. Settings in your site's own
+# hugo.toml take precedence.
+[markup.highlight]
+  noClasses = false   # required: emit CSS classes so syntax.css can color them
+  codeFences = true
+  guessSyntax = false

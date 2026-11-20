@@ -1,0 +1,162 @@
+/*
+ * terminal-dracula — syntax highlighting
+ * Shadows terminal/assets/css/syntax.css.
+ * Token colors follow the official Dracula Pygments style
+ * (github.com/dracula/pygments); Chroma uses the same token classes.
+ * Palette: https://draculatheme.com/spec
+ */
+:root:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+  --dracula-darker: #21222c;
+
+  /* Kept so anything else in the theme that references these still works */
+  --first-tone: var(--dracula-purple);
+  --second-tone: var(--dracula-pink);
+  --comment: var(--dracula-comment);
+}
+
+/* ---------- Code block chrome ---------- */
+/* Hugo loads this file before Terminal's main.css and code.css, so each
+   selector starts with "html" to outrank theirs regardless of order. */
+
+html pre,
+html .highlight pre,
+html pre.chroma {
+  background: var(--dracula-background) !important;
+  color: var(--dracula-foreground);
+  border-color: var(--dracula-current-line);
+}
+
+html pre code,
+html pre.chroma code {
+  color: var(--dracula-foreground);
+}
+
+html .highlight {
+  border-color: var(--dracula-current-line);
+}
+
+html .code-title {
+  background: var(--dracula-darker);
+  border-bottom-color: var(--dracula-current-line);
+  color: var(--dracula-comment);
+}
+
+html .code-title .copy-button {
+  background: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+  border-color: var(--dracula-comment);
+}
+
+html .code-title .copy-button:hover {
+  background: var(--dracula-comment);
+}
+
+html pre ::selection {
+  background: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+}
+
+/* ---------- Chroma structure (unchanged from Terminal) ---------- */
+
+/* Background */ .bg { background-color: var(--dracula-background); }
+/* PreWrapper */ .chroma { overflow:auto; color: var(--dracula-foreground); }
+/* CodeLine */ .chroma .cl {  }
+/* LineLink */ .chroma .lnlinks { outline:none;text-decoration:none;color:inherit }
+/* LineTableTD */ .chroma .lntd { width:100%;vertical-align:top;padding:0;margin:0;border:0; }
+/* LineTableTDNumbers */ .chroma .lntd:first-child { width: auto; }
+/* Custom */ .chroma .lntd code { display:grid; }
+/* LineTable */ .chroma .lntable { width:100%;border-spacing:0;padding:0;margin:0;border:0; }
+/* LineHighlight */ .chroma .hl { background-color: var(--dracula-current-line) !important }
+/* LineNumbersTable */ .chroma .lnt { color:var(--dracula-comment);white-space:pre;-webkit-user-select:none;user-select:none;padding:0 10px; }
+/* LineNumbers */ .chroma .ln { color:var(--dracula-comment);white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.8em;padding:0 0.4em 0 0; }
+/* Line */ .chroma .line { display:flex;padding:0 10px; }
+
+/* ---------- Dracula tokens ---------- */
+
+/* Other */ .chroma .x { color:var(--dracula-foreground) }
+/* Error */ .chroma .err { color:var(--dracula-red) }
+/* Keyword */ .chroma .k { color:var(--dracula-pink) }
+/* KeywordConstant */ .chroma .kc { color:var(--dracula-purple) }
+/* KeywordDeclaration */ .chroma .kd { color:var(--dracula-pink);font-style:italic }
+/* KeywordNamespace */ .chroma .kn { color:var(--dracula-pink) }
+/* KeywordPseudo */ .chroma .kp { color:var(--dracula-pink) }
+/* KeywordReserved */ .chroma .kr { color:var(--dracula-pink) }
+/* KeywordType */ .chroma .kt { color:var(--dracula-cyan) }
+/* Name */ .chroma .n { color:var(--dracula-foreground) }
+/* NameAttribute */ .chroma .na { color:var(--dracula-green) }
+/* NameBuiltin */ .chroma .nb { color:var(--dracula-purple);font-style:italic }
+/* NameBuiltinPseudo */ .chroma .bp { color:var(--dracula-purple) }
+/* NameClass */ .chroma .nc { color:var(--dracula-cyan) }
+/* NameConstant */ .chroma .no { color:var(--dracula-purple) }
+/* NameDecorator */ .chroma .nd { color:var(--dracula-green) }
+/* NameEntity */ .chroma .ni { color:var(--dracula-pink) }
+/* NameException */ .chroma .ne { color:var(--dracula-red) }
+/* NameFunction */ .chroma .nf { color:var(--dracula-green) }
+/* NameFunctionMagic */ .chroma .fm { color:var(--dracula-purple) }
+/* NameLabel */ .chroma .nl { color:var(--dracula-cyan);font-style:italic }
+/* NameNamespace */ .chroma .nn { color:var(--dracula-foreground) }
+/* NameOther */ .chroma .nx { color:var(--dracula-foreground) }
+/* NameProperty */ .chroma .py { color:var(--dracula-foreground) }
+/* NameTag */ .chroma .nt { color:var(--dracula-pink) }
+/* NameVariable */ .chroma .nv { color:var(--dracula-foreground);font-style:italic }
+/* NameVariableClass */ .chroma .vc { color:var(--dracula-cyan);font-style:italic }
+/* NameVariableGlobal */ .chroma .vg { color:var(--dracula-foreground);font-style:italic }
+/* NameVariableInstance */ .chroma .vi { color:var(--dracula-purple);font-style:italic }
+/* NameVariableMagic */ .chroma .vm { color:var(--dracula-purple) }
+/* Literal */ .chroma .l { color:var(--dracula-orange) }
+/* LiteralDate */ .chroma .ld { color:var(--dracula-orange) }
+/* LiteralString */ .chroma .s { color:var(--dracula-yellow) }
+/* LiteralStringAffix */ .chroma .sa { color:var(--dracula-pink) }
+/* LiteralStringBacktick */ .chroma .sb { color:var(--dracula-green) }
+/* LiteralStringChar */ .chroma .sc { color:var(--dracula-yellow) }
+/* LiteralStringDelimiter */ .chroma .dl { color:var(--dracula-yellow) }
+/* LiteralStringDoc */ .chroma .sd { color:var(--dracula-yellow) }
+/* LiteralStringDouble */ .chroma .s2 { color:var(--dracula-yellow) }
+/* LiteralStringEscape */ .chroma .se { color:var(--dracula-pink) }
+/* LiteralStringHeredoc */ .chroma .sh { color:var(--dracula-yellow) }
+/* LiteralStringInterpol */ .chroma .si { color:var(--dracula-pink) }
+/* LiteralStringOther */ .chroma .sx { color:var(--dracula-yellow) }
+/* LiteralStringRegex */ .chroma .sr { color:var(--dracula-red) }
+/* LiteralStringSingle */ .chroma .s1 { color:var(--dracula-yellow) }
+/* LiteralStringSymbol */ .chroma .ss { color:var(--dracula-purple) }
+/* LiteralNumber */ .chroma .m { color:var(--dracula-purple) }
+/* LiteralNumberBin */ .chroma .mb { color:var(--dracula-purple) }
+/* LiteralNumberFloat */ .chroma .mf { color:var(--dracula-purple) }
+/* LiteralNumberHex */ .chroma .mh { color:var(--dracula-purple) }
+/* LiteralNumberInteger */ .chroma .mi { color:var(--dracula-purple) }
+/* LiteralNumberIntegerLong */ .chroma .il { color:var(--dracula-purple) }
+/* LiteralNumberOct */ .chroma .mo { color:var(--dracula-purple) }
+/* Operator */ .chroma .o { color:var(--dracula-pink) }
+/* OperatorWord */ .chroma .ow { color:var(--dracula-pink) }
+/* Punctuation */ .chroma .p { color:var(--dracula-foreground) }
+/* Comment */ .chroma .c { color:var(--dracula-comment) }
+/* CommentHashbang */ .chroma .ch { color:var(--dracula-comment) }
+/* CommentMultiline */ .chroma .cm { color:var(--dracula-comment) }
+/* CommentSingle */ .chroma .c1 { color:var(--dracula-comment) }
+/* CommentSpecial */ .chroma .cs { color:var(--dracula-cyan) }
+/* CommentPreproc */ .chroma .cp { color:var(--dracula-pink) }
+/* CommentPreprocFile */ .chroma .cpf { color:var(--dracula-pink) }
+/* Generic */ .chroma .g { color:var(--dracula-pink) }
+/* GenericDeleted */ .chroma .gd { color:var(--dracula-red) }
+/* GenericEmph */ .chroma .ge { color:var(--dracula-yellow);text-decoration:underline }
+/* GenericError */ .chroma .gr { color:var(--dracula-red) }
+/* GenericHeading */ .chroma .gh { color:var(--dracula-purple);font-weight:bold }
+/* GenericInserted */ .chroma .gi { color:var(--dracula-green);font-weight:bold }
+/* GenericOutput */ .chroma .go { color:var(--dracula-comment) }
+/* GenericPrompt */ .chroma .gp { color:var(--dracula-green) }
+/* GenericStrong */ .chroma .gs { color:var(--dracula-orange) }
+/* GenericSubheading */ .chroma .gu { color:var(--dracula-purple);font-weight:bold }
+/* GenericTraceback */ .chroma .gt { color:var(--dracula-red) }
+/* GenericUnderline */ .chroma .gl { color:var(--dracula-foreground);text-decoration:underline }
+/* TextWhitespace */ .chroma .w { color:var(--dracula-foreground) }
