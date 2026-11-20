@@ -15,6 +15,10 @@ theme = ["terminal-dracula", "terminal"]
   centerTheme = false
   autoCover = true
 
+[params.logo]
+  logoText = "Ramblings of a Mad Developer"
+  logoHomeLink = "/"
+
 [menu]
   [[menu.main]]
     identifier = "about"
